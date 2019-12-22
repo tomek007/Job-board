@@ -1,0 +1,68 @@
+.top-bar {
+  padding: 20px 0;
+  width: 100%;
+
+  .logo {
+    background: transparent url("../../images/logo.svg") no-repeat scroll center center;
+    display: inline-block;
+    float: left;
+    height: 35px;
+    width: 125px;
+  }
+
+  .top-menu {
+    float: right;
+    margin-top: 7px;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: white;
+        margin-left: 15px;
+        font-size: 15px;
+
+          &:hover {
+            color: $green;
+          }
+
+          &:focus {
+            color: white;
+          }
+
+          span {
+            color: $green;
+          }
+
+      }
+
+      &:after {
+        color: white;
+        content: "\f111";
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 6px;
+        left: 10px;
+        position: relative;
+        top: -2px;
+      }
+
+      &:last-of-type {
+        &:after {
+          display: none;
+        }
+      }
+
+    }
+
+    @extend .clearfix;
+  }
+
+  @extend %clearfix;
+
+}
+
+.top-bar-wrap {
+  background: $navy;
+  margin-bottom: 45px;
+}

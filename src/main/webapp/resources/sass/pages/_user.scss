@@ -1,0 +1,32 @@
+.user {
+
+  table {
+
+    tr {
+
+      td:nth-child(2),
+      td:nth-child(3) {
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}
+
+
+#job_boardbundle_post {
+
+  .form-group {
+
+    label {
+      font-size: 17px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+  }
+
+}

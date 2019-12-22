@@ -1,0 +1,30 @@
+.form-credentials {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 35px;
+
+  .error-message {
+    text-align: center;
+    font-size: 19px;
+    color: red;
+    display: block;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid red;
+  }
+
+  .error-message:empty {
+    display: none;
+  }
+
+}
+
+.form-wrap {
+  padding: 15px 35px;
+
+  label {
+    display: block;
+    margin-bottom: 7px;
+  }
+
+}

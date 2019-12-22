@@ -1,0 +1,50 @@
+$breakpoints: (
+        'xs-phone': 320px,
+        'phone': 480px,
+        'tablet': 768px,
+        'desktop': 992px,
+        'widescreen': 1200px
+);
+
+// keywords
+$media-expressions: (
+        'screen': 'screen',
+        'print': 'print',
+        'handheld': 'handheld',
+        'landscape': '(orientation: landscape)',
+        'portrait': '(orientation: portrait)',
+        'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+        'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+@import 'vendors/include-media';
+@import 'vendors/font-awesome.min';
+@import 'vendors/bootstrap.min';
+@import 'vendors/slick';
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/global';
+
+@import 'layouts/common';
+
+@import 'elements/buttons';
+@import 'elements/video';
+@import 'elements/accordions';
+@import 'elements/typography';
+@import 'elements/forms';
+
+@import 'areas/nav';
+@import 'areas/header';
+@import 'areas/main';
+@import 'areas/footer';
+@import 'areas/sidebar';
+
+@import 'pages/home';
+@import 'pages/user';
+@import 'pages/show';
+@import 'pages/admin';

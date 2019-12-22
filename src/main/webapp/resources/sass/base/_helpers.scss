@@ -1,0 +1,101 @@
+// ---------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------
+
+// list reset
+%listreset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Clearfix */
+
+.clearfix {
+    display: block;
+    zoom: 1;
+
+    &:after {
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+%clearfix {
+    display: block;
+    zoom: 1;
+
+    &:after {
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+// transition
+%transition {
+    transition: all 0.2s ease;
+}
+
+
+/// * Helper class to truncate and add ellipsis to a string too long for it to fit
+/// * on a single line.
+/// * 1. Prevent content from wrapping, forcing it on a single line.
+/// * 2. Add ellipsis at the end of the line.
+
+.ellipsis {
+    white-space: nowrap; /* 1 */
+    text-overflow: ellipsis; /* 2 */
+    overflow: hidden;
+}
+
+/* ---------- Removing The Dotted Outline ---------- */
+
+input::-moz-focus-inner {
+    border: 0;
+}
+
+button:hover, button:active, button:focus,
+a:hover, a:active, a:focus,
+input:hover, input:active, input:focus,
+select:hover, select:active, select:focus,
+textarea:hover, textarea:active, textarea:focus {
+    outline: none;
+    -moz-outline-style: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+input, textarea {
+    border: none;
+}
+
+.txt {
+    font-size: 0 !important;
+    line-height: 0;
+    outline: medium none;
+    overflow: hidden;
+    text-indent: -9999px !important;
+}
+
+.clear {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    line-height: 0;
+}

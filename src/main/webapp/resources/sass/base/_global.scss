@@ -1,0 +1,39 @@
+body {
+  color: #252331;
+  line-height: normal;
+  border-top: 3px solid $fadeblue;
+  width: 100%;
+  font-weight: 400;
+  background: #F7F7F7;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+}
+
+svg {
+
+  * {
+    @extend %transition;
+  }
+
+  &:not(:root) {
+    overflow: visible!important;
+  }
+
+}
+
+.svg-loader {
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+a:hover, a:focus {
+  color: #3e364c;
+}
+
+b, strong {
+  font-weight: bold;
+}
