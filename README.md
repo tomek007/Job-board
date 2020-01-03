@@ -1,7 +1,7 @@
-### Portal Ofert Pracy
+### Job Board Website
 
  
- ````[Projekt zaliczeniowy] - Java Developer Web - Coderslab Kraków 2019````
+ ````[Final project] - Java Developer Web - Coderslab Cracow 2019````
 
 
 ![Screenshot](readme-img/context_01.png)
